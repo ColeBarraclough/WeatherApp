@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "A simple WeatherApp using API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColeBarraclough/WeatherApp.git"
+  },
+  "author": "Cole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColeBarraclough/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/ColeBarraclough/WeatherApp#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
