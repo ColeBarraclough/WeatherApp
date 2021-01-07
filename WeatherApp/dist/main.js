@@ -1,0 +1,1 @@
+console.log(async function(){return fetch("https://api.openweathermap.org/data/2.5/weather?id=5913490&appid=812094d10dc57aeb1bbaf6899556b3c6",{mode:"cors"}).then((function(e){return e.json()}))}());
