@@ -6,17 +6,17 @@ async function getWeatherJson() {
 }
 
 function setElement(id, temp) {
-    document.getElementById(id).innerText = temp;
+    document.getElementById(id).innerText += temp;
 }
 
 
 function setDocument() {
     let weather = getWeatherJson();
     weather.then(function(data) {
-        setElement("temperature", data['main']['temp']);
-        setElement("feels-like", data['main']['feels_like']);
-        setElement("weather", data['weather'][0]['description']);
-        setElement("wind", data['wind']['speed']);
+        setElement("temperature", (data['main']['temp'] - 273.15).toFixed(2) + "°C");
+        setElement("feels-like", ": " + (data['main']['feels_like'] - 273.15).toFixed(2) + "°C");
+        setElement("weather", ": " + data['weather'][0]['description']);
+        setElement("wind", ": " + data['wind']['speed'] + "km/h");
     });
     
 }

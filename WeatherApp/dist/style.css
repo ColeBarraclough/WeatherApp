@@ -1,0 +1,60 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(blue, cyan);
+}
+html {
+    height: 100%;
+}
+
+div {
+    font-size: 32px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+#title {
+    font-size: 50px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 50%;
+    height: 50%;
+}
+
+#pics {
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#temperature {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 20%;
+    font-size: 64px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-right: 5px solid white;
+    width: 75%
+}
+
+#aux {
+    margin-top: 50%;
+    margin-left: 0%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
